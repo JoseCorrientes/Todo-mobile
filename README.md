@@ -1,3 +1,2 @@
-<h1>Todo App</h1>
-
-My version of the Popular TODO's App. It was make in ReactJS.
+<h1> Todo-mobile </h1>
+Todo Version that works in responsive way.
