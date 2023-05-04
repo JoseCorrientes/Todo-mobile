@@ -1,7 +1,7 @@
 
 
 .TodoContainer {
-    height: 4rem;
+    height: 5rem;
     background-color: white;
     border: 2px solid black;
     border-radius: 20px 20px 0 0;
@@ -16,11 +16,11 @@
     font-size: 2rem;
     font-weight: 100;
     line-height: 100%;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     grid-column-start: 2 ;
     grid-column-end: 3;
-    padding-left: .5rem;
+    padding-left: 1rem;
 }
 .TituloTachado {
     color: gray;
@@ -29,11 +29,11 @@
     font-size: 2rem;
     font-weight: 100;
     line-height: 100%;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     grid-column-start: 2 ;
     grid-column-end: 3;
-    padding-left: .5rem;
+    padding-left: 1rem;
 }
 .Check {
     margin-top: auto;
@@ -42,6 +42,7 @@
     height: 3rem;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding-left: .5rem;
 }
 /* .Check:hover {
     cursor: pointer;
@@ -56,7 +57,6 @@
     grid-column-start: 3;
     grid-column-end: 4;
     padding-left: 0;
-    background-color: pink;
 }
 /* .TrashBucket:hover {
     transform: scale(1.1);

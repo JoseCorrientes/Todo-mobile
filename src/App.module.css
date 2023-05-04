@@ -41,11 +41,11 @@ body {
     align-items: center;
 
     width: 98%;
-    height: 6rem;
+    height: auto;
     border: 1px solid blue;
     border-radius: 2rem 2rem 2rem 2rem;
     overflow: hidden;
-    background-color: blue;
+     background-color: pink;
    
 }
 .MainTitle {

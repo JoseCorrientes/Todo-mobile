@@ -8,7 +8,6 @@ font-family: 'Red Hat Display', sans-serif; */
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .Title {
@@ -24,9 +23,9 @@ font-family: 'Red Hat Display', sans-serif; */
     display: flex;
     width: 3rem;
     max-width: 3rem;
+    height: 3rem;
     margin-left: auto;
     margin-right: auto;    
-    background-color: red;
 }
 
 
