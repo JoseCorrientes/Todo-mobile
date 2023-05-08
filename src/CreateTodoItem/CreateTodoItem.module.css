@@ -3,31 +3,42 @@
 font-family: 'Red Hat Display', sans-serif; */
 .container {
     /* background-color: pink; */
+    margin: 0 auto;
+    margin-top: 1.8%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 700px;
 }
 
 .Title {
-    flex-basis: 80%;
+    flex-basis: 60%;
+    /* flex-basis: 80%; */
     font-family: 'Red Hat Display', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
     color: white;
+    text-align: right;
 }
 .CreateTodoButton {
-    flex-basis: 20%;
+    flex-basis: 40%;
+    /* flex-basis: 20%; */
     display: flex;
     width: 3rem;
     max-width: 3rem;
     height: 3rem;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;  
+    
+    /* padding-right: .3rem; */
+    background-color: transparent; 
 }
-
+.ImagenLateral {
+    display: none;
+}
 
 
 

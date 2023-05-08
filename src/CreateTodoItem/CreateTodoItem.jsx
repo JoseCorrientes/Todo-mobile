@@ -14,11 +14,11 @@ function CreateTodoItem({ setOpenModal }) {
         onClick={() => setOpenModal((prevState) => !prevState)}
         alt="Crear Nuevo Todo"
       />
-      {/* <img
+      <img
         className={CreateTodoItemCSS.ImagenLateral}
         src={ImagenLateral}
         alt="Boy with his laptop"
-      /> */}
+      />
     </div>
   );
 }

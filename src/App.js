@@ -97,16 +97,15 @@ function App() {
   return (
     <div className={AppCSS.MainContainer}>
 
-
-
-
+     
+     
       <div className={AppCSS.LeftContainer}>
 
         <CreateTodoItem setOpenModal={setOpenModal} />
-        {/* <HideCompleteButton
+        <HideCompleteButton
           hideCompletedTodo={hideCompletedTodo}
           toggleHideCompleteTodo={toggleHideCompleteTodo}
-        /> */}
+        />
       </div>
 
 
@@ -120,10 +119,10 @@ function App() {
         />
         <TodoSearch search={search} setSearch={setSearch} />
 
-        {/* {!error && loading && 
+        {!error && loading && 
             <div className={AppCSS.RightListContainer}>
                 <SkeletonLoader/>
-            </div>} */}
+            </div>}
 
         {!loading &&
         <TodoList
