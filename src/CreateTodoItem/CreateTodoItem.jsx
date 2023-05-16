@@ -10,7 +10,6 @@ function CreateTodoItem({ setOpenModal }) {
       <img
         className={CreateTodoItemCSS.CreateTodoButton}
         src={CreateTodo}
-        // onClick={()=>setOpenModal(!openModal)}
         onClick={() => setOpenModal((prevState) => !prevState)}
         alt="Crear Nuevo Todo"
       />

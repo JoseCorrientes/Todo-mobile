@@ -1,37 +1,16 @@
 .HideTaskButton {
-    background-color: rgb(225, 207, 207);
-    border: 1px solid rgb(225, 207, 207);
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .4rem;
-    margin-bottom: .4rem;
-    /* width: 40%; */
-    width: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 600px;
-    height: auto;
+  background-color: rgb(225, 207, 207);
+  border: 1px solid rgb(225, 207, 207);
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 600px;
+  height: auto;
+  font-size: 2vh;
+  line-height: 3vh;
 }
-
-
-
-
-
-
-/* .HideTaskButton {
-    background-color: rgb(225, 207, 207);
-    border: 1px solid rgb(225, 207, 207);
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 3vh;
-}
-.HideTaskButton:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-} */

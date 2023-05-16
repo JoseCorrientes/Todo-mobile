@@ -1,26 +1,8 @@
 .TodoListContainer {
-    margin-top: 1rem;
-    width: 90%;
-    max-width: 700px;
-    /* height: 100%; */
-    /* height: auto; */
-    /* height: 60vh; */
-    height: 80%;
-    overflow-y: scroll;
-    margin-bottom: 1rem;
-    overflow-y: scroll;
+  margin-top: 1rem;
+  width: 90%;
+  max-width: 700px;
+  height: 80%;
+  margin-bottom: 1rem;
+  overflow-y: auto;
 }
-
-
-/* .TodoListContainer {
-    padding-left: 5px; 
-    padding-right: 5px;
-    padding-top: .6vh;
-    padding-bottom: .6vh;
-    background-color: grey;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-    overflow-y: scroll;
-    height: 62.5vh;
-} */

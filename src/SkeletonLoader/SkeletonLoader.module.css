@@ -1,169 +1,91 @@
 .SkeletonListContainer {
-    padding-left: 5px; 
-    padding-right: 5px;
-    padding-top: .6vh;
-    padding-bottom: .6vh;
-    /* background-color: grey; */
-    background-color: red;
-    /* margin-left: 10px; */
-    margin-top: 1rem;
-    margin-left: 1rem;
-    /* margin-right: 10px; */
-    margin-right: 1rem;
-    border-radius: 20px;
-    overflow-y: scroll;
-    /* height: 62.5vh; */
-    height: 60vh;
-    width: 90vw;
-    max-width: 700px;
-    }
-.SkeletonContainer {
-    margin: 2px;
-    position: relative;
-    height: 9.8vh;
-    background-color: white;
-    border: none;
-    border-radius: 20px 20px 0 0;
-    display: grid;
-    grid-template-columns: 40px auto 80px ;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0.6vh;
+  padding-bottom: 0.6vh;
+  background-color: transparent;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 20px;
+  border: none;
+  overflow-y: scroll;
+  height: 60vh;
+  width: 90vw;
+  max-width: 700px;
 }
-.CircleBox {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 5px;;
-    border-radius: 50px;
-    /* width: 40px;
-    height: 40px; */
-    width: 3rem;
-    height: 3rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
-}
-
-
-.TextBox {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 15px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
-    /* width: 500px; */
-    width: 15rem;
-    height: 40px;
-}
-
-.CircleBox2 {
-    position: absolute;
-    text-align: right;
-    margin-right: 0;
-    margin-left: 10px;
-    border-radius: 80%;
-    /* width: 60px;
-    height: 60px; */
-    width: 3.5rem;
-    height: 3.5rem;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
-}
-@keyframes loadingAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-} 
-
-
-
-
-/* .SkeletonListContainer {
-    padding-left: 5px; 
-    padding-right: 5px;
-    padding-top: .6vh;
-    padding-bottom: .6vh;
-    background-color: grey;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-    overflow-y: scroll;
-    height: 62.5vh;
-    }
-
 
 .SkeletonContainer {
-    margin: 2px;
-    position: relative;
-    height: 9.8vh;
-    background-color: white;
-    border: none;
-    border-radius: 20px 20px 0 0;
-    display: grid;
-    grid-template-columns: 40px auto 80px ;
+  position: relative;
+  height: 9.8vh;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: 40px auto 80px;
+  box-shadow: 1vh 1vh 3vh rgba(0, 0, 0, 0.4);
 }
 
 .CircleBox {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 5px;;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
+  margin-top: 3.15vh;
+  margin-left: 5px;
+  border-radius: 50px;
+  width: 3.5vh;
+  height: 3.5vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 250, 250, 1),
+    rgb(200, 199, 199)
+  );
+  background-size: 400% 500%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+  background-color: blue;
 }
 
-
 .TextBox {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 15px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
-    width: 500px;
-    height: 40px;
+  position: absolute;
+  margin-top: 2.9vh;
+  margin-left: 15px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 250, 250, 1),
+    rgb(200, 199, 199)
+  );
+  background-size: 400% 500%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+  line-height: 4vh;
+  width: 80%;
+  height: 4vh;
 }
 
 .CircleBox2 {
-    position: absolute;
-    text-align: right;
-    margin-right: 0;
-    margin-left: 10px;
-    border-radius: 80%;
-    width: 60px;
-    height: 60px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background: linear-gradient(90deg, rgba(250,250,250,1),rgb(200, 199, 199));
-    background-size: 400% 500%;
-    animation: loadingAnimation 3s ease-in-out infinite;
+  text-align: right;
+  margin: 2vh auto;
+  border-radius: 80%;
+  width: 5vh;
+  height: 5vh;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 250, 250, 1),
+    rgb(200, 199, 199)
+  );
+  background-size: 400% 500%;
+  animation: loadingAnimation 3s ease-in-out infinite;
 }
 @keyframes loadingAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-} */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

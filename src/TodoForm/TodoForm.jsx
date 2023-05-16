@@ -24,7 +24,7 @@ function TodoForm({ setOpenModal, addTodo }) {
 
   return (
     <form className={TodoFormCSS.TodoFormContainer} onSubmit={onSubmit}>
-      <p className={TodoFormCSS.TodoFormTitle}>Insert your Task</p>
+      <p className={TodoFormCSS.TodoFormTitle}>Insert your New Task</p>
       <input
         className={TodoFormCSS.TodoFormInput}
         placeholder="Todo Text..."
@@ -40,11 +40,7 @@ function TodoForm({ setOpenModal, addTodo }) {
         >
           Cancel
         </button>
-        <button
-          className={TodoFormCSS.TodoFormOkButton}
-          type="submit"
-          // onClick={saveTodoForm}
-        >
+        <button className={TodoFormCSS.TodoFormOkButton} type="submit">
           Ok
         </button>
       </div>

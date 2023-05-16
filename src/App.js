@@ -42,20 +42,17 @@ function App() {
   const [filteredTodos, setFilteredTodos] = useState(todos);
   const [hideCompletedTodo, setHideCompletedTodo] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  
-  const [loading, setLoading]=useState(true);
-  const [error, setError]= useState(false);
 
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const completedTodos = todos.filter((x) => x.completed === true).length;
 
-  useEffect(()=>{
+  useEffect(() => {
     setInterval(() => {
-        setLoading(false)
+      setLoading(false);
     }, 2000);
-
-  },[]) 
-  
+  }, []);
 
   useEffect(() => {
     let newFilter = todos.filter((item) =>
@@ -96,20 +93,13 @@ function App() {
 
   return (
     <div className={AppCSS.MainContainer}>
-
-     
-     
       <div className={AppCSS.LeftContainer}>
-
         <CreateTodoItem setOpenModal={setOpenModal} />
         <HideCompleteButton
           hideCompletedTodo={hideCompletedTodo}
           toggleHideCompleteTodo={toggleHideCompleteTodo}
         />
       </div>
-
-
-
 
       <div className={AppCSS.RightContainer}>
         <h1 className={AppCSS.MainTitle}>Your Tasks</h1>
@@ -119,40 +109,41 @@ function App() {
         />
         <TodoSearch search={search} setSearch={setSearch} />
 
-        {!error && loading && 
-            <div className={AppCSS.RightListContainer}>
-                <SkeletonLoader/>
-            </div>}
+        {!error && loading && (
+          <div className={AppCSS.RightListContainer}>
+            <SkeletonLoader />
+          </div>
+        )}
 
-        {!loading &&
-        <TodoList
-          lista={filteredTodos}
-          deleteTodo={deleteTodo}
-          completeTodo={completeTodo}
-        />}
-
-
+        {!loading && (
+          <TodoList
+            lista={filteredTodos}
+            deleteTodo={deleteTodo}
+            completeTodo={completeTodo}
+          />
+        )}
       </div>
       {openModal && (
         <Modal>
           <TodoForm setOpenModal={setOpenModal} addTodo={addTodo}></TodoForm>
         </Modal>
       )}
-{/*       
-      {!error&& !!loading && <ModalError>
-                           <ErrorLoading/>
-                    </ModalError>} */}
-      {/* {error && <ModalError>
-                        <ErrorError/>
-                    </ModalError>} */}
-      
-      
-      {/* {!error && !loading && (todos.length<1) && <ModalError>
-                                            <ErrorCreateFirstTodo/>
-                                       </ModalError> } */}
-        
 
-
+      {!error && !!loading && (
+        <ModalError>
+          <ErrorLoading />
+        </ModalError>
+      )}
+      {error && (
+        <ModalError>
+          <ErrorError />
+        </ModalError>
+      )}
+      {!error && !loading && todos.length < 1 && (
+        <ModalError>
+          <ErrorCreateFirstTodo />
+        </ModalError>
+      )}
     </div>
   );
 }
