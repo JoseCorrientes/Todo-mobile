@@ -3,14 +3,10 @@
 .ModalErrorContainer {
   position: absolute;
   font-family: "Red Hat Display", sans-serif;
-  /* width: 700px; */
   height: 5rem;
   background-color: none;
-  /* position: fixed; */
   top: 80%;
   width: 100vw;
-  /* top: calc(100vh - 6rem); */
-  /* left: calc((100vw - 700px) / 2); */
   left: 0;
   border: none;
   color: white;
