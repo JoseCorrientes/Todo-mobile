@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Display:wght@300;500;700;800&display=swap");
 
 .ModalErrorContainer {
+  position: absolute;
   font-family: "Red Hat Display", sans-serif;
-  width: 700px;
+  /* width: 700px; */
   height: 5rem;
   background-color: none;
-  position: fixed;
+  /* position: fixed; */
   top: 50vh;
+  width: 100vw;
   /* top: calc(100vh - 6rem); */
-  left: calc((100vw - 700px) / 2);
+  /* left: calc((100vw - 700px) / 2); */
+  left: 0;
   border: none;
   color: white;
 }
